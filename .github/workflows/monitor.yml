@@ -1,0 +1,27 @@
+name: Monitor SNPT Wallet
+
+on:
+  # 5分ごとにスクリプトを実行
+  schedule:
+    - cron: '*/5 * * * *'  # 5分ごとに実行
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest  # 最新のUbuntu環境を使用
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # リポジトリの内容を取得
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x  # 最新のPythonを使用
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests  # 必要なライブラリをインストール
+
+      - name: Run the script
+        run: python monitor_snpt.py  # スクリプトを実行
