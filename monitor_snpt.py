@@ -6,7 +6,7 @@ SENDER_ADDRESS = "0x288e7b339a17075114c28d902e45af78da44543f"
 RECIPIENT_ADDRESS = "0xe7ee1d51f58a450552ff45c37630335d534ce9e3"
 CONTRACT_ADDRESS = "0x22737f5bbb7c5b5ba407b0c1c9a9cdf66cf25d7d"
 POLYGON_RPC_URL = "https://polygon-rpc.com"
-DISCORD_WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_URL"  # ここにDiscordのWebhook URLを記入
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1339531632675389452/XiNRFIVRGmbP1Hqheuh_vSY4n7AV1E-G2bx8NWmihHvAJA8pxm_Z4U4Nde-WczS23GgF"  # ここにDiscordのWebhook URLを記入
 
 # 送金履歴を取得する関数
 def get_transactions():
